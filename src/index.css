@@ -149,6 +149,15 @@ body {
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
+  .social-icon a {
+    @apply flex justify-center items-center w-full h-full; /* Ensure the anchor tag fills the container */
+  }
+
+  .social-icon img {
+    @apply object-contain; /* Ensure the image maintains its aspect ratio and doesn't stretch */
+    width: 50%; /* Or set a specific size, like width: 75%; */
+    height: 50%;
+  }
 }
 
 .waving-hand {
