@@ -6,7 +6,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
-    emnail: "",
+    email: "",
     message: "",
   });
   const handleChange = ({ target: { name, value } }) => {
@@ -20,8 +20,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_8xgh2qd",
-        "template_2d3eeh2",
+        "service_83apcnd",
+        "template_zufzj8i",
         {
           from_name: form.name,
           to_name: "Priyanshu",
@@ -35,12 +35,13 @@ const Contact = () => {
       alert("Your message has been sent!");
       setForm({ name: "", email: "", message: "" });
     } catch (err) {
+      console.log(err);
       setLoading(false);
       alert("Something went wrong");
     }
   };
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
           src="/assets/terminal.png"
@@ -50,9 +51,8 @@ const Contact = () => {
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            tempora nulla ipsam voluptates ex excepturi quisquam, laboriosam
-            alias fugit voluptatem!
+            Whether you’re looking to build a new website, improve your existing
+            platform, or bring a unique project to life, I’m here to help.
             <form
               onSubmit={handleSubmit}
               className="mt-12 flex flex-col space-y-7"
