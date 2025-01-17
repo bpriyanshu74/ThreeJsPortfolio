@@ -25,8 +25,9 @@ const About = () => {
             <div>
               <p className="grid-headtext"> Hi, I'm Priyanshu</p>
               <p className="grid-subtext">
-                With 2.5 years of experience, I have honed my skills in Frontend
-                and Backend development, with a focus on animated 3D websites
+                With 3 years of experience, I have honed my skills in Frontend
+                and Backend development, with a focus on robust and scalable
+                solutions.
               </p>
             </div>
           </div>

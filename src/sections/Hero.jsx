@@ -28,7 +28,7 @@ const Hero = () => {
           Hi, I am Priyanshu <span className="waving-hand">&#128075;</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Building Products & Brands
+          Transforming Ideas through Code.
         </p>
       </div>
       <div className="w-full h-full absolute inset-0">
